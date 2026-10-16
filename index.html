@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>あなたの名前 | Works</title>
+  <style>
+    /* ===== 見た目の設定(色や文字を変えたいときはここ) ===== */
+    :root {
+      --bg: #fafaf8;
+      --text: #222;
+      --sub: #777;
+      --line: #ddd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+    }
+    header, section, footer {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.3rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+    nav a { margin-right: 16px; color: var(--sub); text-decoration: none; }
+    nav a:hover { color: var(--text); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .card img, .card .placeholder {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #e8e6e1;
+      display: block;
+    }
+    .card h3 { margin: 12px 0 0; font-size: 1rem; }
+    .card p { margin: 4px 0 0; color: var(--sub); font-size: 0.9rem; }
+    footer { color: var(--sub); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== トップ(自己紹介) ===== -->
+  <header>
+    <h1>あなたの名前</h1>
+    <p>建築 / 釣り具 / 家具 / プロダクトデザイン</p>
+    <nav>
+      <a href="#architecture">建築</a>
+      <a href="#tackle">釣り具</a>
+      <a href="#furniture">家具</a>
+      <a href="#product">プロダクト</a>
+      <a href="#contact">連絡先</a>
+    </nav>
+  </header>
+
+  <!-- ===== 建築 ===== -->
+  <section id="architecture">
+    <h2>建築</h2>
+    <div class="grid">
+
+      <!-- ↓ 作品1つぶん。コピーして増やせます -->
+      <div class="card">
+        <div class="placeholder"></div>
+        <!-- 画像を使うときは、上の行を次のように書き換え:
+             <img src="images/house01.jpg" alt="作品名"> -->
+        <h3>作品名</h3>
+        <p>所在地・年・ひとこと説明</p>
+      </div>
+      <!-- ↑ ここまで -->
+
+      <div class="card">
+        <div class="placeholder"></div>
+        <h3>作品名</h3>
+        <p>所在地・年・ひとこと説明</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 釣り具 ===== -->
+  <section id="tackle">
+    <h2>釣り具</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="placeholder"></div>
+        <h3>作品名</h3>
+        <p>素材・サイズ・ひとこと説明</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 家具 ===== -->
+  <section id="furniture">
+    <h2>家具</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="placeholder"></div>
+        <h3>作品名</h3>
+        <p>素材・サイズ・ひとこと説明</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== プロダクトデザイン ===== -->
+  <section id="product">
+    <h2>プロダクトデザイン</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="placeholder"></div>
+        <h3>作品名</h3>
+        <p>用途・ひとこと説明</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 連絡先 ===== -->
+  <section id="contact">
+    <h2>連絡先</h2>
+    <p>mail@example.com</p>
+  </section>
+
+  <footer>
+    &copy; 2026 あなたの名前
+  </footer>
+
+</body>
+</html>
